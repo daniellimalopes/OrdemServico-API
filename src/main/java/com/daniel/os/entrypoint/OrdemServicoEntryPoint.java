@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.daniel.os.core.business.CadastrarOrdemServicoBusiness;
+import com.daniel.os.core.business.OrdemServicoBusiness;
 import com.daniel.os.core.domain.OrdemServico;
 import com.daniel.os.entrypoint.httpmodel.OrdemServicoHttpModel;
 import com.daniel.os.entrypoint.mapper.OrdemServicoHttpModelMapper;
@@ -22,7 +22,7 @@ import com.daniel.os.entrypoint.mapper.OrdemServicoHttpModelMapper;
 public class OrdemServicoEntryPoint {
 	
 	@Autowired
-	private CadastrarOrdemServicoBusiness cadastrarOrdemServicoBusiness;
+	private OrdemServicoBusiness cadastrarOrdemServicoBusiness;
 	
 	@RequestMapping(method = RequestMethod.POST)
 	public ResponseEntity<OrdemServico> insert(@Valid @RequestBody OrdemServicoHttpModel ordemServicoHttpModel){

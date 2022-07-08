@@ -17,7 +17,7 @@ public class ClienteHttpModelMapper {
 				.id(httpModel.getId())
 				.nome(httpModel
 				.getNome())
-				.cpfcnpj(httpModel.getCpfcnpj())
+				.cpfCnpj(httpModel.getCpfCnpj())
 				.email(httpModel.getEmail())
 				.telefone(httpModel.getTelefone())
 				.tipoCliente(TipoCliente.toenum(httpModel.getTipoCliente()))
@@ -36,7 +36,7 @@ public class ClienteHttpModelMapper {
 		return Optional.ofNullable(cliente).map(domain -> ClienteHttpModel.builder()
 				.id(domain.getId())
 				.nome(domain.getNome())
-				.cpfcnpj(domain.getCpfcnpj())
+				.cpfCnpj(domain.getCpfCnpj())
 				.email(domain.getEmail())
 				.telefone(domain.getTelefone())
 				.tipoCliente(domain.getTipoCliente().getCod())

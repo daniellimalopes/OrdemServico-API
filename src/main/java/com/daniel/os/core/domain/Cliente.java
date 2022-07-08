@@ -17,10 +17,11 @@ public class Cliente {
 	private Integer id;
 	private String nome;
 	private String telefone;
-	private String cpfcnpj;
+	private String cpfCnpj;
 	private String email;
 	private TipoCliente tipoCliente;
 	private List<Endereco> enderecos;
 	private List<OrdemServico> servicos;
+	
 	
 }

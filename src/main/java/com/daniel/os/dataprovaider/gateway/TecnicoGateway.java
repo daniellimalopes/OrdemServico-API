@@ -6,6 +6,4 @@ public interface TecnicoGateway {
 
 	Tecnico cadastrarTecnico(Tecnico tecnico);
 
-	Tecnico buscarUsuarioPorId(Integer id);
-
 }

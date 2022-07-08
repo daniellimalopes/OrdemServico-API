@@ -8,7 +8,7 @@ import com.daniel.os.core.domain.OrdemServico;
 import com.daniel.os.dataprovaider.gateway.OrdemServicoGateway;
 
 @Service
-public class CadastrarOrdemServicoBusiness {
+public class OrdemServicoBusiness {
 
 	@Autowired
 	private OrdemServicoGateway ordemServicoGateway;

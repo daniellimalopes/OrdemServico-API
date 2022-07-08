@@ -8,6 +8,7 @@ class OsApplicationTests {
 
 	@Test
 	void contextLoads() {
+		
 	}
 
 }

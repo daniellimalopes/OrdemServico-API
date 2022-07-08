@@ -1,7 +1,6 @@
 package com.daniel.os.dataprovaider.entity;
 
 import java.util.List;
-import java.util.Objects;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -18,7 +17,7 @@ import lombok.NoArgsConstructor;
 @Data
 @Builder
 @NoArgsConstructor
-@AllArgsConstructor 
+@AllArgsConstructor
 @Entity(name = "tb_tecnico")
 public class TecnicoEntity {
 	@Id
@@ -34,22 +33,5 @@ public class TecnicoEntity {
 	private String cpf;
 	@Transient
 	private List<OrdemServicoEntity> ordemServicos;
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj)
-			return true;
-		if (obj == null)
-			return false;
-		if (getClass() != obj.getClass())
-			return false;
-		TecnicoEntity other = (TecnicoEntity) obj;
-		return Objects.equals(id, other.id);
-	}
-	@Override
-	public int hashCode() {
-		return Objects.hash(id);
-	}
-	
-	
 
 }

@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.daniel.os.core.business.CadastrarTecnicoBusiness;
+import com.daniel.os.core.business.TecnicoBusiness;
 import com.daniel.os.core.domain.Tecnico;
 import com.daniel.os.entrypoint.httpmodel.TecnicoHttpModel;
 import com.daniel.os.entrypoint.mapper.TecnicoHttpModelMapper;
@@ -22,7 +22,7 @@ import com.daniel.os.entrypoint.mapper.TecnicoHttpModelMapper;
 public class TecnicoEntryPoint {
 
 	@Autowired 
-	private CadastrarTecnicoBusiness cadastrarTecnicoBusiness;
+	private TecnicoBusiness cadastrarTecnicoBusiness;
 
 
 

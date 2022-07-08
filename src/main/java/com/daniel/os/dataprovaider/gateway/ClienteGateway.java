@@ -4,13 +4,12 @@ import com.daniel.os.core.domain.Cliente;
 
 public interface ClienteGateway {
 
-	Cliente cadastrarCliente(Cliente cliente);
+	Cliente createCliente(Cliente cliente);
 	
-	Cliente buscarClientePorId(Integer id);
-	
-	
-	
-	
+	Cliente atualizarCliente(Integer id, Cliente cliente);
 
+	Cliente findById(Integer id);
+
+	Cliente findAll();
 
 }

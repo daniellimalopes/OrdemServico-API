@@ -26,11 +26,6 @@ public class TecnicoDataProvaider implements TecnicoGateway {
 		return TecnicoEntityMapper.to(tecnicoEntityNovo);
 	}
 
-	@Override
-	public Tecnico buscarUsuarioPorId(Integer id) {
-		Optional<TecnicoEntity> tecnicoEntity = tecnicoRepository.findById(id);
-		return TecnicoEntityMapper.to(tecnicoEntity.get());
-	}
-	
+
 
 }

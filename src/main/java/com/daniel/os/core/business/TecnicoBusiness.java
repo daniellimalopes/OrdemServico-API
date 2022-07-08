@@ -9,16 +9,21 @@ import com.daniel.os.core.domain.Tecnico;
 import com.daniel.os.dataprovaider.gateway.TecnicoGateway;
 
 @Service
-public class CadastrarTecnicoBusiness {
+public class TecnicoBusiness {
 
 	@Autowired
 	private TecnicoGateway tecnicoGateway;
-	
+
 	@Transactional
 	public Tecnico cadastrarTecnico(Tecnico tecnico) {
 		tecnico.setId(null);
-		tecnico =  tecnicoGateway.cadastrarTecnico(tecnico);
-		
+		tecnico = tecnicoGateway.cadastrarTecnico(tecnico);
+
 		return tecnico;
 	}
+
+	
+
+
+
 }
