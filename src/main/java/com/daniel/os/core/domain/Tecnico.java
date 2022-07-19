@@ -18,5 +18,6 @@ public class Tecnico  {
 	private String telefone;
 	private String cargo;
 	private String cpf;
+	private List<DadosDeLogin> dadosDeLogins;
 	private List<OrdemServico> ordemServicos;
 }

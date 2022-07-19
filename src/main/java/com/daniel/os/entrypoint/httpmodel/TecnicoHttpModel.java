@@ -2,8 +2,11 @@ package com.daniel.os.entrypoint.httpmodel;
 
 import java.util.List;
 
+import javax.validation.constraints.Email;
+
 import org.hibernate.validator.constraints.br.CPF;
 
+import com.daniel.os.dataprovaider.entity.DadosDeLoginEntity;
 import com.daniel.os.dataprovaider.entity.OrdemServicoEntity;
 
 import lombok.AllArgsConstructor;
@@ -22,5 +25,6 @@ public class TecnicoHttpModel {
 	private String cargo;
 	@CPF
 	private String cpf;
+	private List<DadosDeLoginEntity> dadosDeLogins;
 	private List<OrdemServicoEntity> ordemServicos;
 }
